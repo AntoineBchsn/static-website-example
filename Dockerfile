@@ -1,5 +1,5 @@
-FROM httpd:latest
-RUN apt-get update
+FROM httpd:2.4
+RUN apt-getupdate
 RUN apt-get install -y git
 EXPOSE 80
 RUN rm -Rf /var/www/html/*
